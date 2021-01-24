@@ -1,0 +1,246 @@
+/*-- Reset --*/
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  box-sizing: border-box;
+}
+/* ==== NASLOV PREKO SLIKE ==== */
+.main-text-div{
+  position: absolute;
+  top: 20%;
+
+}
+.main-text{
+  color: rgba(4, 110, 57, 0.788) ;
+  text-shadow:5px 5px 15px rgb(22, 22, 22);
+  font-weight: 800;
+}
+/* ============ VIDEO ============= */
+.container-fluid .row .myVideo{
+  width: 85%;
+  height: 110%;
+  border: 1px solid #555;
+  box-shadow: 5px 5px 15px #555;
+}
+
+/*============= NAVIGATION =============*/
+.navbar{
+  padding: 0rem;
+}
+.main-navbar{
+  background-color:#100904a2;
+}
+.navbar .navbar-brand{
+  width: 50%;
+
+}
+.main-toggler{
+  position: relative;
+  right: 10%;
+}
+/* ====== NAVBAR LINKS ========= */
+
+.navbar-nav .nav-item .main-link-o{
+  width: 87px;
+  color: #fff;
+  text-shadow: 3px 3px 10px  rgb(7, 0, 0);
+  font-size: 1.1em !important;
+}
+.navbar-nav .nav-item .main-link{
+  width: 174px;
+  color: #fff;
+  text-shadow: 3px 3px 10px rgb(7, 0, 0);
+  font-size: 1.1em !important;
+
+}
+.navbar-nav .nav-item .link { 
+  color: #fff;
+  text-shadow: 3px 3px 10px rgb(7, 0, 0);
+  font-size: 1.1em !important;
+  margin-right: 20px;
+
+}
+
+/* ============= LOGO ============== */
+.navbar-brand .logo {
+  width: 50%;
+  margin: -4px 0 -4px -13px;
+  height: 100%;
+  display: inline-block;
+  border-radius: 0px 5px 15px 0px;
+  box-shadow: 2px 2px 15px rgb(15, 15, 15);
+  -webkit-border-radius: 0px 5px 15px 0px;
+  -moz-border-radius: 0px 5px 15px 0px;
+  -ms-border-radius: 0px 5px 15px 0px;
+  -o-border-radius: 0px 5px 15px 0px;
+}
+
+/*============= CAROUSEL =============*/
+.carousel-inner img{
+  width: 100%;
+  height: 100vh;
+  
+}
+
+
+/*---Change Carousel Transition Speed --*/
+
+
+/*-- Carousel Content --*/
+
+
+/*============= SOCIAL MEDIA STICKY BAR =============*/
+
+.jumbotron {
+  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  padding: 1rem 0.5rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  -ms-border-radius:0;
+  -o-border-radius:0;
+}
+
+/* ===== MAIN-HR ===== */
+
+.main-hr{
+  width: 50%;
+  border: 2px solid #100904;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  opacity: 0.3;
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+figure .fixed-background {
+  padding: 12rem;
+  border-top: 2rem solid #100904a2;
+  border-bottom: 2rem solid #100904a2;
+  margin-bottom: 2px;
+  height: 200vh;
+  /*-- remove --*/
+}
+
+
+/*============= FOOTER =============*/
+.main-footer{
+  background-color:  #080808fd;
+}
+.main-footer .main-icons .main-icon,.main-icon-youtube{
+  color: #817d7d;
+  font-size: 36px;
+  margin: 2%;
+}
+.main-footer .main-icons .main-icon:hover{
+  color:rgba(35, 48, 221, 0.788) ;
+  font-size: 36px;
+  margin: 2%;
+}
+ .main-footer .main-icons .main-icon-youtube:hover{
+  color:#FF0000 ;
+  font-size: 36px;
+  margin: 2%;
+}
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+  .main-img{
+    width: 100%;
+  }
+}
+
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+  .main-collapse{
+    position: relative;
+    right: 8%;
+  }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+  
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+}
+
+/* ----POTPIS ---- */
+.potpis{
+  font-size: 13px;
+}
