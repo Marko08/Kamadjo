@@ -1,3 +1,5 @@
-$.ajax("info.txt",function(){
-    alert(info.txt)
-})
+document.createElement('header')
+document.createElement('footer')
+document.createElement('nav')
+document.createElement('article')
+document.createElement('iframe')

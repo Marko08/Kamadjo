@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*-- Reset --*/
 html,
 body {
@@ -6,7 +13,8 @@ body {
   width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: large;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /* ==== NASLOV PREKO SLIKE ==== */
 .main-text-div{
@@ -23,16 +31,18 @@ body {
 .container-fluid .row .myVideo{
   width: 85%;
   height: 110%;
-  border: 1px solid #555;
-  box-shadow: 5px 5px 15px #555;
+  border: 1px solid hsl(0, 0%, 33%);
+  -webkit-box-shadow: 5px 5px 15px hsl(0, 0%, 33%);
+          box-shadow: 5px 5px 15px hsl(0, 0%, 33%);
 }
 
 /*============= NAVIGATION =============*/
 .navbar{
+  padding: 0px;
   padding: 0rem;
 }
 .main-navbar{
-  background-color:#100904a2;
+  background-color:hsla(25, 60%, 4%, 0.635);
 }
 .navbar .navbar-brand{
   width: 50%;
@@ -46,19 +56,19 @@ body {
 
 .navbar-nav .nav-item .main-link-o{
   width: 87px;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-shadow: 3px 3px 10px  rgb(7, 0, 0);
   font-size: 1.1em !important;
 }
 .navbar-nav .nav-item .main-link{
   width: 174px;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-shadow: 3px 3px 10px rgb(7, 0, 0);
   font-size: 1.1em !important;
 
 }
 .navbar-nav .nav-item .link { 
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-shadow: 3px 3px 10px rgb(7, 0, 0);
   font-size: 1.1em !important;
   margin-right: 20px;
@@ -72,7 +82,8 @@ body {
   height: 100%;
   display: inline-block;
   border-radius: 0px 5px 15px 0px;
-  box-shadow: 2px 2px 15px rgb(15, 15, 15);
+  -webkit-box-shadow: 2px 2px 15px rgb(15, 15, 15);
+          box-shadow: 2px 2px 15px rgb(15, 15, 15);
   -webkit-border-radius: 0px 5px 15px 0px;
   -moz-border-radius: 0px 5px 15px 0px;
   -ms-border-radius: 0px 5px 15px 0px;
@@ -96,11 +107,15 @@ body {
 /*============= SOCIAL MEDIA STICKY BAR =============*/
 
 .jumbotron {
-  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  background: -webkit-gradient(linear, left top, right top, from(hsl(0, 0%, 95%)), to(hsl(0, 0%, 98%)));
+  background: -o-linear-gradient(left, hsl(0, 0%, 95%), hsl(0, 0%, 98%));
+  background: linear-gradient(to right, hsl(0, 0%, 95%), hsl(0, 0%, 98%));
+  padding: 16px 8px;
   padding: 1rem 0.5rem;
   margin-bottom: 0;
   border-radius: 0;
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+          box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
   -webkit-border-radius:0;
   -moz-border-radius:0;
   -ms-border-radius:0;
@@ -111,18 +126,22 @@ body {
 
 .main-hr{
   width: 50%;
-  border: 2px solid #100904;
+  border: 2px solid hsl(25, 60%, 4%);
   border-radius: 5px;
   margin-bottom: 3%;
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 }
 
 /*===== FIXED BACKGROUND IMG =====*/
 
 figure .fixed-background {
+  padding: 192px;
   padding: 12rem;
-  border-top: 2rem solid #100904a2;
-  border-bottom: 2rem solid #100904a2;
+  border-top: 32px solid hsla(25, 60%, 4%, 0.635);
+  border-top: 2rem solid hsla(25, 60%, 4%, 0.635);
+  border-bottom: 32px solid hsla(25, 60%, 4%, 0.635);
+  border-bottom: 2rem solid hsla(25, 60%, 4%, 0.635);
   margin-bottom: 2px;
   height: 200vh;
   /*-- remove --*/
@@ -131,10 +150,10 @@ figure .fixed-background {
 
 /*============= FOOTER =============*/
 .main-footer{
-  background-color:  #080808fd;
+  background-color:  hsla(0, 0%, 3%, 0.992);
 }
 .main-footer .main-icons .main-icon,.main-icon-youtube{
-  color: #817d7d;
+  color: hsl(0, 2%, 50%);
   font-size: 36px;
   margin: 2%;
 }
@@ -144,7 +163,7 @@ figure .fixed-background {
   margin: 2%;
 }
  .main-footer .main-icons .main-icon-youtube:hover{
-  color:#FF0000 ;
+  color:hsl(0, 100%, 50%) ;
   font-size: 36px;
   margin: 2%;
 }
